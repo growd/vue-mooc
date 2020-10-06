@@ -118,7 +118,7 @@ export default {
         type: this.currentType
       }
       if (this.isFilter) {
-        params.integral = this.integral
+        params.integral_max = this.integral
       }
       getIntegralList(params).then(res => {
         const { code, data, msg } = res

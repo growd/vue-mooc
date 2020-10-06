@@ -108,7 +108,8 @@ export default {
     handleBtnClick () {
       const params = {
         username: this.loginForm.username,
-        password: crypto.MD5(this.loginForm.password).toString()
+        // password: crypto.MD5(this.loginForm.password).toString()
+        password: this.loginForm.password
       }
       // 判断是登陆还是注册
       const func = this.index === 0 ? userLogin : userRegister

@@ -226,6 +226,8 @@ export default {
       getLabelList().then(res => {
         const { code, data, msg } = res
         if (code === ERR_OK) {
+          console.log(data)
+          console.log("xxxxx")
           this.labelList = this.normalizeLabelList(data)
         } else {
           this.$message.error(msg)
@@ -241,8 +243,11 @@ export default {
       }
       const labelTreeObj = []
       array.forEach(item => {
+        console.log(item)
         const findIndex = labelTreeObj.findIndex(filter => filter.title === item.type.text)
         // 判断当前标签是否在已关注列表中
+        console.log(this.followList)
+        console.log("this.foloow")
         const selectIndex = this.followList.findIndex(filterItem => filterItem.labelid === item.id)
         if (selectIndex === -1) {
           item.isSelected = false

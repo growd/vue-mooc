@@ -21,7 +21,7 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   response => {
     let {status, data} = response
-    if (status !== 200) {
+    if (status !== 200 && status !== 201 && status !== 204) {
       Message.error('网络异常，请刷新或者重试!')
       return Promise.reject('网络异常!')
     }

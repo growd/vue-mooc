@@ -102,6 +102,7 @@ export default {
     },
     // 删除事件
     handleDeleteClick (item) {
+      console.log(item)
       const params = {
         id: item.id
       }
@@ -135,6 +136,9 @@ export default {
       getCartList().then(res => {
         let { code, data, msg } = res
         if (code === ERR_OK) {
+          if(!data){
+            data = []
+          }
           this.cartList = this.normalizeCartData(data)
         } else {
           this.cartList = []

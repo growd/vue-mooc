@@ -63,8 +63,8 @@ export default {
   created () {
     this.filterList = [
       { title: '默认排序', code: '' },
-      { title: '最新', code: 'time' },
-      { title: '最热', code: 'persons' }
+      { title: '最新', code: '-time' },
+      { title: '最热', code: '-persons' }
     ]
   },
   methods: {

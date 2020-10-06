@@ -80,8 +80,8 @@ export default {
   created () {
     this.filter = [
       { title: '默认排序', code: '' },
-      { title: '最新', code: 'time' },
-      { title: '销量', code: 'persons' }
+      { title: '最新', code: '-time' },
+      { title: '销量', code: '-persons' }
     ]
   },
   methods: {
