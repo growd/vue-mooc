@@ -24,7 +24,7 @@ export function noticeReadAll (data) {
 
 // 获取消息中心设置
 export function getNoticeSetting () {
-  return axios.get('/mock/notice/setting.json')
+  return axios.get('/api/v1/notice/setting')
 }
 
 // 是否存在未读消息

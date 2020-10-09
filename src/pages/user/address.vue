@@ -106,11 +106,11 @@ export default {
       this.dialogVisible = true
       this.editForm = {
         id: '',
-        name: '汪图南',
-        phone: '18277776666',
-        area: '广东省广州市',
-        address: '天河区xxx路xxx号xxx公司',
-        postcode: '000000'
+        name: '',
+        phone: '',
+        area: '',
+        address: '',
+        postcode: ''
       }
       this.$nextTick(() => {
         this.$refs.editForm.resetFields()
@@ -251,7 +251,7 @@ export default {
           line-height: 50px;
           font-size: 35px;
           cursor: pointer;
-        .add-text 
+        .add-text
           margin-top: 18px;
           font-size: 14px;
           color: #4d555d;

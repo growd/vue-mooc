@@ -2,7 +2,7 @@ import axios from 'utils/axios.js'
 
 // 获取主页导航信息
 export function getHomeNav () {
-  return axios.get('/api/home/nav')
+  return axios.get('/api/v1/home/nav')
 }
 
 // 获取主页滚动轮播数据
@@ -12,7 +12,7 @@ export function getSliderList () {
 
 // 获取主页课程信息
 export function getHomeCourse () {
-  return axios.get('/api/home/lesson')
+  return axios.get('/api/v1/home/lesson')
 }
 
 // 获取主页猿问和手记信息
